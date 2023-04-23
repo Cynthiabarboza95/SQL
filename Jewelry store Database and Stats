@@ -1,0 +1,29 @@
+
+
+CREATE TABLE jewlery (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO jewlery VALUES (1, "earings", 4,9.99);
+INSERT INTO jewlery VALUES (2, "gold rings ", 2,5.00);
+INSERT INTO jewlery VALUES (3, "necklace", 7,10.99);
+INSERT INTO jewlery VALUES (4, "bracelets", 6, 5.99);
+INSERT INTO jewlery VALUES (5, "nose rings", 3,3.99);
+INSERT INTO jewlery VALUES (6, "belly rings", 1,12.00 );
+INSERT INTO jewlery VALUES (7, "ankle braclets", 8,4.99);
+INSERT INTO jewlery VALUES (8, "toe rings", 9,2.99);
+INSERT INTO jewlery VALUES (9, "hip chains", 3,8.00);
+INSERT INTO jewlery VALUES (10, "charms", 15,3.99);
+INSERT INTO jewlery VALUES (11, "ear cuffs", 7, 2.99);
+INSERT INTO jewlery VALUES (12, "silver rings", 22,4.99);
+INSERT INTO jewlery VALUES (13, "key chains", 5,8.99);
+INSERT INTO jewlery VALUES (14, "watches", 11, 15.99);
+INSERT INTO jewlery VALUES (15, "sun glasses", 6, 9.99); 
+
+
+--display the database ordered by price. 
+SELECT * FROM jewlery
+ORDER BY price;
+
+what piece of jewlery is more than $12 ?
+SELECT * FROM jewlery WHERE price > 12 ORDER BY price;  
+
+what items do we have the least of ?
+SELECT * FROM jewlery ORDER BY quantity;
